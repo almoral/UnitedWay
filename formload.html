@@ -2512,16 +2512,10 @@ clear:both;
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <style>
   
-  .vertical-banner{
-    background: url(images/live-united-vertical-banner-big.jpg) no-repeat;
-    position: fixed;
-    height: 2000px;
-    display: none;
-  }
-
   .horizontal-banner{
-    background: url(images/live-united-horizontal-banner-sm.jpg) no-repeat;
-    height: 198px;
+    background: url(images/live-united-horizontal-banner.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
   }
 
   .minHeight{
@@ -2544,6 +2538,15 @@ clear:both;
   .focus{
     display: -webkit-flex;
     display: flex;
+  }
+
+  body{
+    background: #ebebeb;
+  }
+  
+  .container{
+    background: #fff;
+    box-shadow: 0 0 5px #666;
   }
 
 </style>
@@ -2647,23 +2650,23 @@ clear:both;
             </div>
 
             <div class="form-group">
-                  <input type="checkbox" name="donationtypePayroll" id="payroll" value="Y" onClick="enableradio1();" />
+                  <input type="radio" name="donationtypePayroll" id="payroll" value="Y" onClick="enableradio1();" />
 
                   Payroll Deduction<br>
 
-                  <input type="checkbox" name="donationtypeCash" id="cash" value="Y" onClick="enableradio2();" />
+                  <input type="radio" name="donationtypeCash" id="cash" value="Y" onClick="enableradio2();" />
 
                   Cash*<br>
 
-                  <input type="checkbox" name="donationtypeCheck" id="check" value="Y" onClick="enableradio3();" />
+                  <input type="radio" name="donationtypeCheck" id="check" value="Y" onClick="enableradio3();" />
 
                   Check*<br>
 
-                  <input type="checkbox" name="donationtypeCredit" id="credit" value="Y" onClick="enableradio4();" />
+                  <input type="radio" name="donationtypeCredit" id="credit" value="Y" onClick="enableradio4();" />
 
                   Credit**<br>
 
-                  <input type="checkbox" name="donationtypeDebit" id="debit" value="Y" onClick="enableradio5();" />
+                  <input type="radio" name="donationtypeDebit" id="debit" value="Y" onClick="enableradio5();" />
 
                   Debit**           
                 </div>
@@ -2693,7 +2696,7 @@ clear:both;
         online form is submitted</strong></em> 
         </p>
 
-               
+<hr>               
   </div>
 
 
@@ -2707,7 +2710,7 @@ clear:both;
 
             
             <div class="col-sm-12">
-            <div class="well">
+           
             <h2>Leadership Circle</h2>
 
 
@@ -2933,18 +2936,14 @@ volunteerism and more.</p>
   </div>
 
            <div class="btm"></div>
-  </div>
 
 
-      
-
-     
 
       <div class="row">
       <div class="col-md-12">    
-      <div class="well">
+     
           
-        
+        <hr>
             <div class="top"></div>
   
              <h2>Making a lasting difference</h2>
@@ -3129,55 +3128,42 @@ volunteerism and more.</p>
      
             </div>
           </div>
-        </div>
 
             <div class="btm"></div>
 
-            
-
-                  
-
-                              
-
+                        
             <div class="top"></div>
 
             <h2>Miscellaneous Information</h2>
 
-            <p>
 
-       <input name="willandestate" type="checkbox" id="1%5" value="Y"  >
-
+       <input name="willandestate" type="checkbox" id="willandestate" value="Y"  >
+<label for="willandestate">
 <strong>I have</strong> included United Way in my will and estate plans. Please contact me.<br>
+  </label>
+<br/>
+<input name="willandestateinfo" type="checkbox" id="willandestateinfo" value="Y" >
+<label for="willandestateinfo">
+I would like to include United Way in my will and estate plans. Please contact me.
+  </label>
 
-<input name="willandestateinfo" type="checkbox" id="1%6" value="Y" >
-
-<strong>I would like</strong> to include United Way in my will and estate plans. Please contact me.
-
-      </p>
-
-            <p>
+<br/>
 
               <input type="checkbox" name="loyalContributor" id="loyalContributor" value="Y" >
 
-              <label for="loyalContributor"></label>
+              <label for="loyalContributor">
 
-            check this box if you are a loyal contributor (giving to United Way for more than 10 years)</p>
+            check this box if you are a loyal contributor (giving to United Way for more than 10 years)
 
-            
+            </label>
 
        <div class="btm"></div>
 
-            
-
-            
-
-      
 
              <div class="top"></div>
 
              
 
-         
 
       <p align="center"><br>
 
@@ -3187,7 +3173,8 @@ volunteerism and more.</p>
 
 <div class="btm"></div>
 
-            
+ </div>
+ </div>         
 
             
 
